@@ -7,7 +7,7 @@
   <img src="./src/assets/images/logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>JAVASCRIPT TODO LIST APP"</b></h3>
+  <h3><b>Leaderboard API Application"</b></h3>
 
 </div>
 
@@ -38,14 +38,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [JavaScript Todo List App'] <a name="about-project"></a>
+# 📖 [LEADERBOARD APP'] <a name="about-project"></a>
 
-  **[JavaScript Todo List App]** This project is a JavaScript-based Todo List application that allows you to manage your tasks efficiently. It incorporates various features such as adding, deleting, updating, and canceling tasks, as well as the ability to drag and drop tasks for easy organization.
-
-The app is built using modern JavaScript techniques, specifically utilizing ES6 syntax, JavaScript modules and webpack. ES6 (ECMAScript 2015) is the sixth edition of the JavaScript language specification and introduces several enhancements, including arrow functions, classes, template literals, and more. By leveraging ES6, the codebase is more concise, readable, and easier to maintain.
-Webpack is used as the module bundler for the app. It enables efficient management of JavaScript modules, optimizes code size, and helps in organizing dependencies. Webpack allows the app to be split into multiple modules, improving code modularity and facilitating easier maintenance.
-
-JavaScript modules are a way to organize and structure code by separating it into individual modules, each with its own set of functionalities. This modular approach improves code maintainability, reusability, and allows for better organization of different parts of the application.
+  **[Leader Board  App]**  TThe Leaderboard API Application is a robust and flexible JavaScript application that empowers game developers and enthusiasts to create and manage dynamic leaderboards effortlessly. By leveraging the latest technologies such as ES6 modules, Webpack, and the Leaderboard API, this application offers a comprehensive solution for tracking, displaying, and analyzing scores in an intuitive and efficient manner.
 
  
 
@@ -99,17 +94,13 @@ JavaScript modules are a way to organize and structure code by separating it int
 ### Key Features <a name="key-features"></a>
 
 - **[HTML & CSS Best practices]**
-- **[Add Task]**
-- **[Display Task]**
-- **[Delete Task ]**
+- **[Add New Game]**
+- **[Add User and Score]**
+- **[Display Users and Scores ]**
 - **[Update Task ]**
-- **[Cancel task completion ]**
-- **[Filter Tasks ]**
-- **[Mark Task as Completed ]**
-- **[Modular JavaScript]**
-- **[Data Persistence]**
-- **[Data Persistence]**
-- **[Edit Book Details ]**
+- **[Seamless Integration ]**
+- **[ES6 Modules ]**
+- **[Webpack Bundling ]**
 - **[CI and CD Deployment with Netlify]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -146,8 +137,8 @@ To run this project  you need the following tools:
 
 Clone this repository to your desired folder:
 ```sh
- cd todolist-app
- git clone git@github.com:alyconr/todolist-app.git
+ cd leaderboard
+ git clone git@github.com:alyconr/leaderboard.git
 ```
 
 
@@ -253,13 +244,9 @@ JEYSSON CONTRERAS
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Task Prioritization]**
-- [ ] **[Task Categories]**
-- [ ] **[Task Reminders]**
-- [ ] **[Task Scheduling]**
-- [ ] **[Task Sharing and Colaboration]**
-- [ ] **[Task Search]**
 - [ ] **[User Authentication]**
+- [ ] **[Sorting and Filtering]**
+- [ ] **[Score Analytics]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -270,7 +257,7 @@ JEYSSON CONTRERAS
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/alyconr/todolist-app.git/issues).
+Feel free to check the [issues page](https://github.com/alyconr/leaderboard.git/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
