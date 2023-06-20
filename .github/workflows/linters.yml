@@ -26,6 +26,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18.x"
+          environment: 'NODE_OPTIONS: --experimental-specifier-resolution=node'
       - name: Setup Webhint
         run: |
           npm install --save-dev hint@7.x
