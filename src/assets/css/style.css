@@ -97,8 +97,7 @@ h1 {
 
 .list .item .pos {
   font-weight: 900;
-  position: absolute;
-  left: -2rem;
+  margin-left: 1rem;
   text-align: center;
   font-size: 1.25rem;
   width: 1.5rem;
