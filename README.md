@@ -40,8 +40,7 @@
 
 # 📖 [LEADERBOARD APP'] <a name="about-project"></a>
 
-  **[Leader Board  App]**  TThe Leaderboard API Application is a robust and flexible JavaScript application that empowers game developers and enthusiasts to create and manage dynamic leaderboards effortlessly. By leveraging the latest technologies such as ES6 modules, Webpack, and the Leaderboard API, this application offers a comprehensive solution for tracking, displaying, and analyzing scores in an intuitive and efficient manner.
-
+  **[Leader Board  App]**  The Leaderboard API Application is a powerful and versatile JavaScript application that utilizes REST methods to provide users with the ability to create games, submit scores, and retrieve scores for a selected game. The codebase is structured into various modules, each responsible for specific functionalities within the game. By incorporating cutting-edge technologies such as ES6 modules, Webpack, and the Leaderboard API's RESTful interface, this application offers a comprehensive solution for effectively tracking, displaying, and analyzing scores in an intuitive and efficient manner.
  
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -102,6 +101,15 @@
 - **[ES6 Modules ]**
 - **[Webpack Bundling ]**
 - **[CI and CD Deployment with Netlify]**
+
+##Create Game:
+ Users can create new games by specifying a game name. The application utilizes the HTTP POST method to send a request to the Leaderboard API, which generates a unique game ID and stores the game name and ID in the database.
+
+##Submit User Score:
+ Users can submit their scores for a selected game by providing their name and score. The application employs the HTTP POST method to send the score data to the Leaderboard API, associating it with the corresponding game ID in the database.
+
+##Retrieve Scores: 
+ Users can retrieve scores for a selected game using the HTTP GET method. The application sends a request to the Leaderboard API, which responds with an array of scores sorted in descending order. These scores are then displayed in the user interface.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
