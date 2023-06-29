@@ -6,7 +6,8 @@ export const getScores = (gameId) => {
       );
       if (response.ok) {
         const data = await response.json();
-        resolve(data.result); // Resolve the promise with the retrieved scores
+        const sortedScores = data.result.sort((a, b) => b.score - a.score);
+        resolve(sortedScores);
       } else {
         throw new Error('Something went wrong');
       }
