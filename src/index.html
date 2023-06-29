@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader Board</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <div>
+          <img id="hamburger" src="assets/images/ham.svg" alt="ham" />
+        </div>
+        <ul id="mobile-menu" class="mobile-nav-box">
+          <li><a href="#startGame"> ✅Create Game</a></li>
+          <li><a href="#getScores">✅Leaderboard</a></li>
+          <li><a href="#">✅Input Your Score</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="headline">
+      <h1>LEADERBOARD GAME</h1>
+    </section>
+
+    <section id="leaderBoard" class="leaderBoard">
+      <div class="col">
+        <h3>Positions Table</h3>
+
+        <button id="getScores" class="btn-score">Get The Game's Score</button>
+
+        <span id="scoreAlertMessage" class="error"></span>
+
+        <div id="score-list" class="list"></div>
+      </div>
+      <div id="modal-section">
+        <button id="startGame" class="start-btn">START NEW GAME</button>
+        <select id="gameIdList" class="game-list"></select>
+        <lottie-player
+          src="https://assets5.lottiefiles.com/packages/lf20_BTrmAdysV3.json"
+          background="transparent"
+          speed="1"
+          class="lottie-player"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="overlay"></div>
+      </div>
+      <div class="container-board-input">
+        <div class="container-input">
+          <h3>INPUT YOUR SCORE</h3>
+
+          <form class="input-score" id="user-score">
+            <input
+              class="name-input"
+              type="text"
+              name="name"
+              id="name-post"
+              placeholder="Your Name"
+            />
+            <input
+              class="score-input"
+              type="text"
+              name="score"
+              id="score-post"
+              placeholder="Your Score"
+            />
+
+            <button class="btn-submit">Submit Data</button>
+            <span id="alertMessage" class="error"></span>
+            <span class="error" id="errorMessage"></span>
+            <lottie-player
+              src="https://assets1.lottiefiles.com/packages/lf20_hliaii.json"
+              background="transparent"
+              speed="1"
+              class="lottie-player"
+              loop
+              autoplay
+            ></lottie-player>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
