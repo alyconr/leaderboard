@@ -102,13 +102,13 @@
 - **[Webpack Bundling ]**
 - **[CI and CD Deployment with Netlify]**
 
-##Create Game:
+### Create Game:
  Users can create new games by specifying a game name. The application utilizes the HTTP POST method to send a request to the Leaderboard API, which generates a unique game ID and stores the game name and ID in the database.
 
-##Submit User Score:
+### Submit User Score:
  Users can submit their scores for a selected game by providing their name and score. The application employs the HTTP POST method to send the score data to the Leaderboard API, associating it with the corresponding game ID in the database.
 
-##Retrieve Scores: 
+### Retrieve Scores: 
  Users can retrieve scores for a selected game using the HTTP GET method. The application sends a request to the Leaderboard API, which responds with an array of scores sorted in descending order. These scores are then displayed in the user interface.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
