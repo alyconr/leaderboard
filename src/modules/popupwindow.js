@@ -34,7 +34,7 @@ export const initGame = () => {
           gameList.appendChild(option);
         });
       } else {
-        createGame();
+        console.log('No games found!');
       }
     };
 
