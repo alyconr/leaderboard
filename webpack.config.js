@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
@@ -9,13 +11,16 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
-    hot: false,
+    hot: true,
     liveReload: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: 'body',
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.css',
     }),
   ],
   output: {
@@ -27,7 +32,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -55,5 +60,9 @@ module.exports = {
   },
   optimization: {
     runtimeChunk: 'single',
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin(),
+    ]
   },
 };
