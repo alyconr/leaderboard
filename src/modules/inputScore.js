@@ -39,6 +39,9 @@ export const inputScore = () => {
             document.getElementById('errorMessage').textContent = '';
             document.getElementById('alertMessage').textContent = '';
             document.getElementById('scoreAlertMessage').textContent = '';
+            document.getElementById('dataSent').textContent = 'User and Score Submitted';
+            document.getElementById('dataSent').style.color = 'white';
+            document.getElementById('dataSent').style.fontSize = '20px';
           })
           .catch((error) => {
             console.log('Error submitting user score:', error);
